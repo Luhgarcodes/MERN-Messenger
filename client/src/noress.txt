@@ -1,0 +1,48 @@
+npm install mongoose
+404-page not available
+500-server releated issues
+400-client side related issues
+200-data sucessfully received
+201-data created at one place
+every schema are a documet or a table
+every models are collections
+
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react,firebase,react-router-dom,pusher-js
+
+
+
+
+"axios": "^1.2.2",
+    "firebase": "^9.15.0",
+    "pusher-js": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+
+
+
+    const messagesCollection = db.collection('messages');
+    const messageChangeStream = messagesCollection.watch()
+
+    messageChangeStream.on("change", (change) => {
+        if (change.operationType === "insert") {
+            const messageDetails = change.fullDocument;
+            pusher.trigger('messages', 'inserted', messageDetails);
+        } else {
+            console.log("no more trigger have taken placed from message");
+        }
+    })
+
+    const roomsCollection = db.collection('rooms');
+    const roomsChangeStream = roomsCollection.watch()
+
+    roomsChangeStream.on("change", (change) => {
+        if (change.operationType === "insert") {
+            const roomsDetails = change.fullDocument;
+            pusher.trigger('rooms', 'inserted', roomsDetails);
+        } else {
+            console.log("no more trigger have taken placed from rooms");
+        }
+    })

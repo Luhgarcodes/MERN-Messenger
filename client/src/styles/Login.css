@@ -1,0 +1,38 @@
+.login {
+    /* background: #f8f8f8; */
+    height: 100vh;
+    /* width: 100vh; */
+    display: grid;
+    place-items: center;
+}
+
+.login__container {
+    background-image: url('https://w0.peakpx.com/wallpaper/1023/308/HD-wallpaper-nicons-929-apps-black-cool-icons-minimal-mobile-new-pink-trista-hogue.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    border: 1px solid lightgrey;
+    /* background: #ffe6ff; */
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.login__container>img {
+    height: 100px;
+    margin-bottom: 40px;
+    object-fit: contain;
+}
+
+.login__container>button {
+    text-transform: inherit !important;
+    font-style: Bold;
+    font-weight: 800;
+    color: white;
+    background-image: linear-gradient(to left, #ff80df, #aa80ff, #1a75ff);
+}
+
+.login__text {
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
