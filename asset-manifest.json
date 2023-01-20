@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MERN-Messenger/static/css/main.a9d26443.css",
+    "main.js": "/MERN-Messenger/static/js/main.7226ef7b.js",
+    "index.html": "/MERN-Messenger/index.html",
+    "main.a9d26443.css.map": "/MERN-Messenger/static/css/main.a9d26443.css.map",
+    "main.7226ef7b.js.map": "/MERN-Messenger/static/js/main.7226ef7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9d26443.css",
+    "static/js/main.7226ef7b.js"
+  ]
+}
